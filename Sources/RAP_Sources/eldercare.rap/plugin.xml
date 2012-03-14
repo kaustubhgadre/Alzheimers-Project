@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="viewapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="main"
+            cardinality="singleton-global"
+            visible="true">
+         <run
+               class="eldercare.rap.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RAP Perspective"
+            class="eldercare.rap.Perspective"
+            id="eldercare.rap.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="view"
+            class="eldercare.rap.View"
+            id="eldercare.rap.view">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.rap.ui.branding">
+      <branding
+            defaultEntrypointId="eldercare.rap.viewapp"
+            favicon="resources/favicon.ico"
+            id="eldercare.rap.branding"
+            servletName="carpet"
+            themeId="org.eclipse.rap.design.example.fancy.theme"
+            title="Eldercare Smart Carpet Display">
+      </branding>
+   </extension>
+
+</plugin>

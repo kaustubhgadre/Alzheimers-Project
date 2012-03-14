@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Elder Care Technology" uid="edu.missouri.eldercare.product" id="edu.missouri.eldercare.application.product" application="edu.missouri.eldercare.application.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="false">
+
+   <aboutInfo>
+      <image path="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo64x64.gif"/>
+      <text>
+         Elder Care Technologies
+All Rights Reserved, MU
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xmx386M -Dosgi.parentClassloader=ext</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+-Djava.awt.headless=true</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo16x16.gif" i32="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo32x32.gif" i48="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo48x48.gif" i64="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo64x64.gif" i128="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo128x128.gif"/>
+
+   <splash
+      location="edu.missouri.eldercare.application"
+      handlerType="interactive" />
+   <launcher name="ElderCare">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo16x16_32.bmp"
+            winSmallLow="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo16x16.bmp"
+            winMediumHigh="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo32x32_32.bmp"
+            winMediumLow="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo32x32.bmp"
+            winLargeHigh="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo48x48_32.bmp"
+            winLargeLow="/edu.missouri.eldercare.application/icons/MU_Stacked_Logo48x48.bmp"/>
+      </win>
+   </launcher>
+
+   <intro introId="edu.missouri.eldercare.application.intro"/>
+
+   <vm>
+      <macos>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</macos>
+      <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
+   </vm>
+
+   <license>
+        <url>http://eldertech.missouri.edu/</url>
+   </license>
+
+   <plugins>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.jcraft.eclipse.jsch.core"/>
+      <plugin id="com.jcraft.eclipse.sftp"/>
+      <plugin id="com.jcraft.jsch"/>
+      <plugin id="edu.missouri.eldercare.application"/>
+      <plugin id="org.apache.commons.net"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.compatibility" fragment="true"/>
+      <plugin id="org.eclipse.core.resources.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.ecf"/>
+      <plugin id="org.eclipse.ecf.filetransfer"/>
+      <plugin id="org.eclipse.ecf.identity"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" fragment="true"/>
+      <plugin id="org.eclipse.ecf.ssl" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.jarprocessor"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.ftp"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.jsch.core"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
+      <plugin id="org.eclipse.opengl"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.rse.connectorservice.ssh"/>
+      <plugin id="org.eclipse.rse.connectorservice.telnet"/>
+      <plugin id="org.eclipse.rse.core"/>
+      <plugin id="org.eclipse.rse.files.ui"/>
+      <plugin id="org.eclipse.rse.processes.ui"/>
+      <plugin id="org.eclipse.rse.services"/>
+      <plugin id="org.eclipse.rse.services.files.ftp"/>
+      <plugin id="org.eclipse.rse.services.ssh"/>
+      <plugin id="org.eclipse.rse.services.telnet"/>
+      <plugin id="org.eclipse.rse.shells.ui"/>
+      <plugin id="org.eclipse.rse.subsystems.files.core"/>
+      <plugin id="org.eclipse.rse.subsystems.files.ftp"/>
+      <plugin id="org.eclipse.rse.subsystems.files.ssh"/>
+      <plugin id="org.eclipse.rse.subsystems.processes.core"/>
+      <plugin id="org.eclipse.rse.subsystems.processes.shell.linux"/>
+      <plugin id="org.eclipse.rse.subsystems.shells.core"/>
+      <plugin id="org.eclipse.rse.subsystems.shells.ssh"/>
+      <plugin id="org.eclipse.rse.subsystems.shells.telnet"/>
+      <plugin id="org.eclipse.rse.subsystems.terminals.core"/>
+      <plugin id="org.eclipse.rse.subsystems.terminals.ssh"/>
+      <plugin id="org.eclipse.rse.ui"/>
+      <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86.source"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.intro"/>
+      <plugin id="org.eclipse.ui.intro.universal"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.webdav"/>
+   </plugins>
+
+
+</product>

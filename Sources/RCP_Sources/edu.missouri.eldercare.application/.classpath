@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="opencsv-2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="org.swtchart_0.6.0.v20090801.jar"/>
+	<classpathentry exported="true" kind="lib" path="RXTXcomm.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-net-3.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="org.jzy3d-0.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="jogl.jar" sourcepath="grid-1.0.0-src.zip"/>
+	<classpathentry kind="lib" path="org.jzy3d-0.9-dependencies.zip"/>
+	<classpathentry kind="lib" path="surfaceplotter-1.98.jar"/>
+	<classpathentry kind="lib" path="swt-grouplayout.jar" sourcepath="swt-grouplayout.zip"/>
+	<classpathentry kind="lib" path="batik-svggen-1.7.jar"/>
+	<classpathentry kind="lib" path="batik-util-1.7.jar"/>
+	<classpathentry kind="lib" path="batik-awt-util-1.7.jar"/>
+	<classpathentry kind="lib" path="swt.jar"/>
+	<classpathentry kind="lib" path="gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="jmathplot.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
